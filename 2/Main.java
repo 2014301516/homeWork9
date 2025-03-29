@@ -16,7 +16,8 @@ public class Main {
 
         @Override
         public double calculateVolume() {
-            return Math.PI * radius * radius * height;
+            // 使用 3.14 替换 Math.PI
+            return 3.14 * radius * radius * height;
         }
     }
 
@@ -32,7 +33,8 @@ public class Main {
 
         @Override
         public double calculateVolume() {
-            return (Math.PI * radius * radius * height) / 3;
+            // 使用 3.14 替换 Math.PI
+            return (3.14 * radius * radius * height) / 3;
         }
     }
 
@@ -46,7 +48,7 @@ public class Main {
         Cone cone = new Cone(3, 4);
         double coneVolume = cone.calculateVolume();
 
-        // 输出结果，保留两位小数
+        // 输出结果，保留一位小数和两位小数
         System.out.printf("圆柱的体积是：%.1f\n", cylinderVolume);
         System.out.printf("圆锥的体积是：%.2f\n", coneVolume);
     }
