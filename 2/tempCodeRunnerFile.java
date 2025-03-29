@@ -1,10 +1,10 @@
 public class Main {
-    // ¶¨Òå½Ó¿Ú Cubage
+    // å®šä¹‰æ¥å£ Cubage
     public interface Cubage {
         double calculateVolume();
     }
 
-    // ÊµÏÖ Cylinder Àà
+    // å®ç° Cylinder ç±»
     public static class Cylinder implements Cubage {
         private double radius;
         private double height;
@@ -20,7 +20,7 @@ public class Main {
         }
     }
 
-    // ÊµÏÖ Cone Àà
+    // å®ç° Cone ç±»
     public static class Cone implements Cubage {
         private double radius;
         private double height;
@@ -36,18 +36,18 @@ public class Main {
         }
     }
 
-    // Ö÷·½·¨
+    // ä¸»æ–¹æ³•
     public static void main(String[] args) {
-        // ´´½¨ Cylinder ¶ÔÏó²¢¼ÆËãÌå»ı
+        // åˆ›å»º Cylinder å¯¹è±¡å¹¶è®¡ç®—ä½“ç§¯
         Cylinder cylinder = new Cylinder(2.5, 4);
         double cylinderVolume = cylinder.calculateVolume();
 
-        // ´´½¨ Cone ¶ÔÏó²¢¼ÆËãÌå»ı
+        // åˆ›å»º Cone å¯¹è±¡å¹¶è®¡ç®—ä½“ç§¯
         Cone cone = new Cone(3, 4);
         double coneVolume = cone.calculateVolume();
 
-        // Êä³ö½á¹û£¬±£ÁôÁ½Î»Ğ¡Êı
-        System.out.printf("Ô²ÖùµÄÌå»ıÊÇ£º%.1f\n", cylinderVolume);
-        System.out.printf("Ô²×¶µÄÌå»ıÊÇ£º%.2f\n", coneVolume);
+        // è¾“å‡ºç»“æœï¼Œä¿ç•™ä¸¤ä½å°æ•°
+        System.out.printf("åœ†æŸ±çš„ä½“ç§¯æ˜¯ï¼š%.1f\n", cylinderVolume);
+        System.out.printf("åœ†é”¥çš„ä½“ç§¯æ˜¯ï¼š%.2f\n", coneVolume);
     }
 }
